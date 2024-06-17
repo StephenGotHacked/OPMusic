@@ -1,0 +1,75 @@
+<html>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.php" class="active">Home</a>
+        <a href="about.php">About us</a>
+        <a href="genre.php">Genre</a>
+        <a href="artist_list.php">List of Artist</a>
+      </div>
+  
+      <div class="navbar">
+        <span style="font-size: 30px; cursor: pointer;color:black;" onclick="openNav()"
+          >☰</span>
+        <div class="header-text">
+          <h1 id="title">OPMusic</h1>
+        </div>
+      </div>
+
+      <style>
+        .navbar {
+          display: flex;
+          position: relative;
+          align-items: center;
+          background-color: white;
+          padding: 10px;
+          height: 50pt;
+          font-family: "Agbalumo", system-ui;
+        }
+        #title {
+          margin-left: 15px;
+          color:black;
+        }
+
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+
+        .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+          color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+      </style>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+    
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+      </script>
